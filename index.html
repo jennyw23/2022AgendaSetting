@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    <link rel="stylesheet" href="styles/custom_style.css" type="text/css" media="screen" />
+    <title>Warped Front Pages</title>
+</head>
+<body>
+    <header>
+        <h1>Warped Front Pages</h1>
+        <h4><em>Selection, Framing, and Coverage Types in the Run-Up to the 2022 Midterm Election</em></h4>
+        <h6>By: David Rothschild, Elliot Pickens, Gideon Heltzer, Jenny Wang, Duncan Watts</h6>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Summary</h2>
+            <p>
+                We examined the printed front-page of <em>The New York Times</em> and <em>The Washington Post</em> from September 1, 2022 through November 8, 2022 (Election Day), and coded all front-page articles by category, topic, specific subtopic, and coverage type. 
+                Our investigation yields two main results. First, <em>The New York Times</em> and <em>The Washington Post</em> both extensively cover major current events topics like the 2022 Midterm and Russian Invasion of Ukraine, as well as ongoing conversations around 
+                the economy, democracy, and Donald Trump. However, when they differ in their selection of domestic topics, <em>The New York Times</em> is more likely to emphasize Republican-favored topics like crime, immigration, and China, 
+                while <em>The Washington Post</em> delves into more Democratic-favored topics like Affirmative Action, police reform, and LGBTQ rights. Second, we find that both of these dominant agenda setters devote surprisingly little attention 
+                to actual policy and instead, even when discussing issues around policy, emphasize “horse race” or personality angles about candidates (which we call “palace intrigue”) rather than policy details necessary for people to make informed 
+                decisions about the two major parties. This paper shows that major agenda setting publications have a lot of leeway in what they choose to cover, and thus what becomes the news to the typical American. And with their choices, 
+                <em>The New York Times</em> and <em>The Washington Post</em>’s political coverage functions more to entertain readers than to educate them on the essential differences between political parties.
+
+            </p>
+            <figure>
+                <img src="figs/Figure5a.jpg" alt="NYT Front-Pages"  style="width: 55vw" class="center">
+                <img src="figs/Figure5b.jpg" alt="WaPo Front-Pages"  style="width: 55vw" class="center">
+                <figcaption>The New York Times and The Washington Post Front-Pages, November 2 through 5</figcaption>
+            </figure>                
+        </section>
+        <section>
+            <h2>Data</h2>
+            <p>
+                We coded all front-page articles from September 1, 2022 through November 8, 2022 (Election Day) by category, topic, specific subtopic, and coverage type.
+                We only read what was printed on the front-page, not the rest of the article printed inside the newspaper. All articles were coded independently by two of the authors and considered firm if both coders agreed. 
+                Any articles with conflicting coding was then independently coded by a third author, and then discussed as a group. In some cases it was not possible to achieve perfect agreement among coders on the topic or coverage type; 
+                however, we believe our main results are robust to coding disagreement (we have also made all of the data available for researchers to explore). Category is defined as either domestic or foreign combined with one of these labels: 
+                Politics, Local, Business, Media \& Entertainment, Science \& Health \& Wellness, Sports, Disaster. For the sake of this article, we take an expansive view of Domestic, defaulting to Domestic if there is any meaningful discussion of the U.S., 
+                and defaulting to Politics if there is any conflict with other categories (we include discussion of the economy in Politics). Topics were defined at a high level (e.g., economics) where articles were also assigned to more specific subtopics 
+                (e.g., inflation is a specific subtopic of economics) where applicable. Finally, we classified every domestic political article as belonging to one of four mutually exclusive coverage types: Policy (if the article has any details over public policy),
+                 Horse Race (if an article that did not have any details of public policy has discussion over the public sentiment and/or likeliness of a party or candidate to win a vote), Palace Intrigue (if an article, not having either of the previous two 
+                 coverage types, covers the drama of people and parties in/around politics), or other if none of these are discussed.
+            </p>
+            <p> 
+                Approximately half of <em>The New York Times</em>' front-page content, specifically 219 out of 408 articles, centered around domestic politics during the lead-up to the 2022 election. 
+                An additional 55 articles were centered on domestic topics without political context, while 134 articles delved into foreign matters. Among these 189 articles unrelated to domestic politics, the predominant subject matter was
+                 the Russian invasion of Ukraine, comprising 68 articles that focused purely on foreign affairs. In a distant second, 15 articles explored the UK's government formation. We catalog comparable aggregated patterns in 
+                 \emph{The Washington Post}'s coverage, where 215 out of 393 front-page articles were dedicated to domestic politics. Of the 178 remaining front-page articles, 76 articles were domestic but unrelated to political themes and 
+                 102 articles addressed foreign matters. Similarly, \emph{The Washington Post}'s foreign coverage centered on Russia and the UK, with 56 articles spotlighting the Russian invasion of Ukraine, followed by 12 articles about Queen
+                  Elizabeth's passing. The remainder of this article will primarily concentrate on the 219 and 215 domestic political articles from \emph{The New York Times} and \emph{The Washington Post}, respectively.
+                  \footnote{The complete list of topics for each set of articles are presented in Tables \ref{fig:a1_nyt} and \ref{fig:a1_wapo} in the Appendix.} 
+            </p>
+            <div class="row centerDiv">
+                <div class="column">
+                    <img src="figs/nyt_a1.png" alt="">
+                </div>
+                <div class="column">
+                    <img src="figs/wapo_a1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Methodology</h2>
+            <p>
+                First, we pulled down the readable PDF of all “late edition” front pages from the New York Times and Washington Post from September 1, 2022 through November 8, 2022 (Election Day). This includes 69 days. The New York Times has 6 articles in all but 6 days for a total of 408 over 69 days. The Washington Post's front page is more variable, containing between 4 and 7 articles each day for a total of 393 articles over this period. We (three of the authors) coded each article for a few key attributes, and then discussed any differences:
+            </p>
+            <p>
+               <b>(1) Date, Headline (and Sub-Headings), Position:</b> We recorded the date, headline, all sub-headlines, and subjective ranking of location for each article. The date and headlines are pulled right from the document. Ranking of location takes into account: distance from top-right corner, size of headline font, inclusion of picture. For example the October 4, 2022 front page has six articles. “Russia Retreats As Troops Show Signs of Turmoil” is the top article, followed by “Risks for Putin …”, “Nevada Reflects …”, “As Job Frenzy Begins to Cool …”, “Reports Details ‘Systemic’ Abuse …”, and “N.Y.U. Students Were Failing Class …” This is not an exact science, but we feel that it provides a meaningful indication of rank.
+            </p>
+            <p>
+                <b>(2) Domestic or Not:</b> The first main assignment is to note an article as domestic if it has any US-based angle to it, or foreign if it is completely about a foreign country. Thus, an article about the Russian Invasion of Ukraine is “domestic” if it discusses U.S. policy, or implications in the U.S. election, or U.S. volunteers, but it is “foreign” if it does not have a serious US-based angle. Thus, to be very redundant: the coding is biased towards “domestic” insofar as an article that is a small amount domestic, but mainly foreign, will be coded as domestic.
+            </p>
+            <p>
+                <b>(3) Category:</b> next we assign a complete and mutually exclusive category label to each article. We have 7 categories: Politics, Local, Business, Media \& Entertainment, Science \& Health \& Wellness, Sports, Disaster. We apply these same sets of categories to domestic and foreign articles. When an article is mixed between categories, we bias towards politics over any other category (i.e., if there is a meaningful political angle, the article is “Politics”). For example an earlier article on Elon Musk’s purchase of Twitter may cover it as a straight business deal, and so it would be categorized as “Business”, while a later article may discuss the political impact as well, so it would be categorized as “Politics”. Ultimately, this categorization does not make it into the article in a meaningful way.
+
+            </p>
+            <p>
+                <b>(4) Topic, sub-Topic, referenced-Topic:</b> Topics are mutually exclusive and complete, they can cut across category (e.g., there are some “Climate Change” articles that are about the politics of it and are coded “Politics”, and others are just about the science and coded “Science \& Health \& Wellness”). Topics can be temporal or perpetual, but are generally broader enough to capture a cluster of articles. Sub-topics are more specific and could be more than one. All topics and sub-topics are key points of the article, not just glancing references.
+
+            </p>
+            <p>
+                <b>(5) Coverage Type:</b> There are four possible answers: policy, horse race, palace intrigue, and other. This is applied to all articles regardless of Domestic or Not, Category, or Topic. The first three options do not really make sense for some categories, but we code them nonetheless. Coding is done hierarchically starting with policy. Policy: Does the article discuss public policy? Specifically does the article mention actual policy, what it does, its impact, etc. of any political entity. We want to be very inclusive here to ensure we, if anything, overly count how much the New York Times explains policy. Horse race: Does the article cover the horserace: is there discussion over the public sentiment and/or likeliness of a party or candidate to win a vote? Palace Intrigue: Does the article cover palace intrigue: is there discussion of aspects of people and parties in/around politics? Other: anything else.
+            </p>
+        </section>
+        <section>
+            <h2>Results</h2>
+            <h4>Result 1: The New York Times and The Washington Post share significant overlap in major topics, but maintain substantial editorial freedom on topics that are not related to breaking events.</h4>
+            <figure>
+                <img src="figs/nyt_wapo_comparison.png" alt="fig2 labels" style="width: 55vw" class="center">
+                <figcaption>Topics Covered By The New York Times and The Washington Post</figcaption>
+            </figure>
+            <figure>
+                <img src="figs/nyt_wapo_avg_daily_topic_overlap.png" alt="daily topic overlap"  style="width: 55vw" class="center">
+                <figcaption># of Topics that Overlap Daily Averaged By Week</figcaption>
+            </figure>
+
+            <h4>Result 2: Politics coverage in major newspapers during the lead-up to the 2022 Midterms offered little insight into actual policies.</h4>
+            <figure>
+                <img src="figs/nyt_wapo_coverage_comparison.png" alt="nyt wapo comparison" style="width: 55vw" class="center">
+                <figcaption>Topics Covered By The New York Times and The Washington Post</figcaption>
+            </figure>
+
+            
+        </section>
+        <p>This is a simple HTML page that can be hosted on GitHub Pages. GitHub Pages is a great way to host your personal websites, projects, and more.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+</body>
+</html>
