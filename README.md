@@ -1,5 +1,5 @@
 # Warped Front Pages
-Researchers examine the self-serving fiction of “objective” political news**
+**Researchers examine the self-serving fiction of “objective” political news**
 
 #### By David Rothschild, Elliot Pickens, Gideon Heltzer, Jenny Wang, and Duncan Watts 
 ----
